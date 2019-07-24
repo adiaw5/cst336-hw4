@@ -1,0 +1,95 @@
+      <% include partials/header.ejs %>
+      <h1>
+        Authentication
+      </h1>
+      </div> 
+    </header> 
+    <% include partials/navigation.ejs %>
+    <br/><br/>
+    <h1 style="text-align:left">
+      Welcome   <%= fakeUsername %></%> 
+    </h1>  
+    <h2 style="text-align: center; color:#47024f">
+      <i>What is an authentication?</i>
+    </h2>   
+    <!-- Main body of the page -->  
+    <main> 
+
+      <figure>
+        <img src="img/mobileauthentication.png" alt="mobile authentication">
+      </figure>      
+      <div> 
+        <p>
+          Authentication is the process of <strong><em>identifying a user or a device</em></strong> before an access is granted to resources. 
+          The process determines whether the user or device is in fact who or what it declares itself to be. 
+          Basically, the credential supplied by the user or application or device is checked against know passwords, 
+          usually stored in a database system or calculated by an authentication server on the fly.
+          <a href="https://doubleoctopus.com/security-wiki/authentication/" style="color:green"> resource... </a>
+        </p>
+        <br/>
+        <q>
+          Passwords are like underwear: don’t let people see it, change it very often, and you shouldn’t share it with strangers.
+        </q>
+          – Chris Pirillo
+        <br/>        
+        <p>
+          Popular authentication methods, click the name more infornation:       
+        </p><br /> 
+        <a href="push.html" style="color:green"> Push Authentication </a><br/><br/>
+        <a href="smartcard.html" style="color:green"> Smart Card Authentication</a><br/><br/>
+        <a href="out-of-band.html" style="color:green"> Out-of-Band Authentication</a><br/><br/>
+      </div>    
+    </main>
+    <br/><br/>
+    <h3 style="text-align: center; color:#47024f">
+      Currently used authentication factors:        
+    </h3>
+    <br/><br/>
+    <div class="row">
+      <div class="column" style="background-color:#520459;">
+        <h2><u>Knowledge factor:</u></h2>
+        <p>
+          "Something you know." The knowledge factor consist of information that the user knows, such as password, 
+          personal identification number (PIN), a user name or challenge response.
+        </p>
+      </div>
+      <div class="column" style="background-color:#702978;">
+        <h2><u>Possession factor:</u></h2>
+        <p>
+          "Something you have." The possession factor refers to hardware tokens, devices such as a mobile phone or any credential 
+          based on items that the user can own and carry. Basically any Software token or hardware token that can generate an one
+          time passcode is considered “something you have”
+        </p>
+      </div>
+      <div class="column" style="background-color:#c56bcf;">
+        <h2><u>Inherence factor:</u></h2>
+        <p>
+          "Something you are." The inherence factor is a factor associated with the user, and are usually biometric methods, 
+          including fingerprint, face, voice, or iris recognition. Behavioral biometrics such as keystroke dynamics can also be used. 
+        </p>
+      </div>
+      <div class="column" style="background-color:#905196;">
+        <h2><u>Location factor:</u></h2>
+        <p>
+          "Where you are." Involves the physical location of the user. While hard wired to the corporate 
+          network, a user could be allowed to login utilizing only a pin code while off the network entering a code from a soft token as well 
+          could be required. This could be seen as an acceptable standard where access into the office is controlled
+        </p>      
+      </div>
+      <div class="column" style="background-color:#66346b;">
+        <h2><u>Time factor:</u></h2>
+        <p>
+          "When you are authenticating." Like the location factor, the time factor is not sufficient on its own, but it can be a supplemental
+          mechanism for weeding out attackers who attempt to access a resource at a time when that resource is not available to the authorized user.
+          It may also be used together with location as well. For example, if the user was last authenticated at noon in the U.S., 
+          an attempt to authenticate from Asia one hour later would be rejected based on the combination of time and location.
+        </p>
+      </div>
+    </div>
+    <br/><br/>
+    <hr>
+    <footer>           
+      CST336 Internet Programming. 2019&copy; Aboubacar Diawara
+    </footer>  
+  </body>
+</html>

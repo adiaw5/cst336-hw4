@@ -1,0 +1,53 @@
+      <% include partials/header.ejs %>
+      <h1>
+        Out of Band Authentication (OOBA)
+      </h1>
+      </div>
+    </header> 
+     <% include partials/navigation.ejs %>
+    <br/><br/>
+    <h2 style="text-align: center; color:#47024f">
+      <i>What is an Out-of-band authentication?</i>
+    </h2>
+    <br/>
+      <!-- Main body of the page -->  
+    <main>
+      <div class="column" style="background-color:#702978">
+       <h2><u>OOBA:</u></h2>
+        <p>
+          Out of band authentication (OOBA) refers to an authentication process that utilizes a communications channel that is separate 
+          from the primary communication channel used by two entities trying to establish an authenticated connection. Using a separate 
+          authentication channel makes it significantly more difficult for an attacker to intercept and subvert 
+          the authentication process (i.e. via man-in-the-middle attack), because it requires the attacker to compromise two communications channels.
+          <a href="https://doubleoctopus.com/security-wiki/authentication/out-of-band-authentication/" style="color:green"> resource... </a>
+        </p>
+      </div>  
+      <div class="column" style="background-color:#702978">
+        <h2><u>Forms of OOBA:</u></h2>
+        <p>
+          Example forms of OOB authentication include, codes sent to a mobile device via SMS, authentication via a voice channel, codes sent 
+          to a mobile app via push notifications, and codes sent to or received from a trusted execution environment connected to the host device 
+          trying to establish an authenticated connection (i.e. TEE implemented
+          by the CPU, a separate secure element built into the host or a separate secure element connected to the host via USB or some other port).
+          <a href="https://doubleoctopus.com/security-wiki/authentication/out-of-band-authentication/" style="color:green"> resource... </a>
+        </p>
+      </div>
+      <div class="column" style="background-color:#702978">
+        <h2><u>SMS OOBA:</u></h2>
+        <p>
+          OOBA is commonly used by online banking websites. To complete the login process, an authentication code is sent via SMS 
+          to the account holder’s mobile device.
+          <a href="https://doubleoctopus.com/security-wiki/authentication/out-of-band-authentication/" style="color:green"> resource... </a>
+        </p>
+      </div>
+      <figure>
+        <img  width="500" height="400"  src="img/out-band-auth.png" alt="auth intro image">    
+      </figure>
+  </main>  
+  <br/><br/>
+  <hr>
+  <footer>           
+    CST336 Internet Programming. 2019&copy; Aboubacar Diawara
+  </footer>
+  </body>
+</html>
