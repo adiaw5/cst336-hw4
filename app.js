@@ -19,7 +19,7 @@ app.use(express.static("public"));
 app.get("/", function(req, res){  
   const faker = require("faker");
   let firstName = faker.name.firstName();
-  res.render("index.html", {fakeUsername:firstName}); 
+  res.render("index.ejs", {fakeUsername:firstName}); 
 });
 
 app.get("/out-of-band", function(req, res){  
